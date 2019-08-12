@@ -1,9 +1,9 @@
-const { HOCRParser } = require('./parser');
+const { HOCRParser } = require('./HOCRParser');
 const wordCorrector = require('./wordCorrector');
 const score = require('./score');
 
-var hocrParser = new HOCRParser();
 
+var hocrParser = new HOCRParser();
 wordCorrector.index(hocrParser);
 score.index(hocrParser);
 
